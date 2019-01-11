@@ -1,0 +1,53 @@
+@import url("assets/fonts/BigJohnSlimJoe/BIGJOHN.otf");
+@import url("assets/fonts/BigJohnSlimJoe/SlimJoe.otf");
+@import url("assets/fonts/Poppins/Poppins-Regular.ttf");
+@import url("assets/fonts/Poppins/Poppins-Black.ttf");
+@import url("assets/fonts/Poppins/Poppins-Bold.ttf");
+@import url("assets/fonts/Poppins/Poppins-ExtraBold.ttf");
+@import url("assets/fonts/Poppins/Poppins-ExtraLight.ttf");
+@import url("assets/fonts/Poppins/Poppins-Light.ttf");
+@import url("assets/fonts/Poppins/Poppins-Medium.ttf");
+@import url("assets/fonts/Poppins/Poppins-SemiBold.ttf");
+@import url("assets/fonts/Poppins/Poppins-Thin.ttf");
+#sectionAbout h2, #sectionSkills h2, #sectionPortfolio h2 {
+  font-size: 10em;
+  font-family: "Big John"; }
+
+#section1 h1 {
+  font-size: 7em;
+  font-family: "Big John";
+  color: #fff; }
+
+html, nav {
+  box-shadow: none;
+  background-color: #F9C0CB; }
+
+/* ------ NAV ----- */
+nav a {
+  color: #F16A77;
+  font-family: "Slim Joe"; }
+nav ul a {
+  font-family: "Poppins";
+  color: #F16A77; }
+nav ul a:hover {
+  background-color: transparent; }
+
+/* ------ SECTION 1 HOME ----- */
+.box {
+  height: 600px; }
+
+/* ------ SECTION 2 ABOUT ----- */
+#sectionAbout h2 {
+  color: #F16A77; }
+
+/* ------ SECTION 3 SKILLS  ----- */
+#sectionSkills h2 {
+  color: #4F64AE; }
+
+/* ------ SECTION 4 PORTFOLIO  ----- */
+#sectionPortfolio h2 {
+  color: #fff; }
+#sectionPortfolio span {
+  color: #F16A77; }
+
+/*# sourceMappingURL=style.css.map */
