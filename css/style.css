@@ -9,7 +9,7 @@
 @import url("assets/fonts/Poppins/Poppins-Medium.ttf");
 @import url("assets/fonts/Poppins/Poppins-SemiBold.ttf");
 @import url("assets/fonts/Poppins/Poppins-Thin.ttf");
-#sectionAbout h2, #sectionSkills h2, #sectionPortfolio h2 {
+#sectionAbout h2, #sectionSkills h2, #sectionPortfolio h2, #portfolioBody h2 {
   font-size: 10em;
   font-family: "Big John"; }
 
@@ -18,7 +18,7 @@
   font-family: "Big John";
   color: #fff; }
 
-html, nav {
+body, nav {
   box-shadow: none;
   background-color: #F9C0CB; }
 
@@ -37,17 +37,40 @@ nav ul a:hover {
   height: 600px; }
 
 /* ------ SECTION 2 ABOUT ----- */
-#sectionAbout h2 {
-  color: #F16A77; }
+#sectionAbout {
+  background-image: url(); }
+  #sectionAbout h2 {
+    color: #F16A77; }
+  #sectionAbout p {
+    color: #293376; }
 
 /* ------ SECTION 3 SKILLS  ----- */
 #sectionSkills h2 {
   color: #4F64AE; }
+#sectionSkills #codeSkills {
+  background-color: #fff; }
+  #sectionSkills #codeSkills li {
+    color: #F16A77; }
+#sectionSkills #designSkills {
+  background-color: #fff; }
+  #sectionSkills #designSkills li {
+    color: #4F64AE; }
+#sectionSkills #softSkills {
+  background-color: #fff; }
+  #sectionSkills #softSkills li {
+    color: #F16A77; }
 
 /* ------ SECTION 4 PORTFOLIO  ----- */
 #sectionPortfolio h2 {
   color: #fff; }
-#sectionPortfolio span {
+  #sectionPortfolio h2 a {
+    color: #F16A77; }
+
+/* ------ PAGE PORTFOLIO  ----- */
+#portfolioBody, #navWhite {
+  background-color: #fff; }
+
+#portfolioBody h2 {
   color: #F16A77; }
 
 /*# sourceMappingURL=style.css.map */

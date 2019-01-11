@@ -36,7 +36,7 @@ $textFont: 'Poppins';
 }
 
 
-html, nav{
+body, nav{
     box-shadow: none;
     background-color: $pinkLight;
    
@@ -75,9 +75,13 @@ nav {
 
 /* ------ SECTION 2 ABOUT ----- */
 #sectionAbout{
+    background-image: url();
     h2{
         @extend %h2;
         color: $pinkDark;
+    }
+    p{
+        color: $blueDark;
     }
 }
 
@@ -86,6 +90,24 @@ nav {
     h2{
         @extend %h2;
         color: $blueLight;
+    }
+    #codeSkills{
+        background-color: #fff;
+        li{
+            color: $pinkDark;
+        }
+    }
+    #designSkills{
+        background-color: #fff;
+        li{
+            color: $blueLight;
+        }
+    }
+    #softSkills{
+        background-color: #fff;
+        li{
+            color: $pinkDark;
+        }
     }
 }
 
@@ -96,9 +118,23 @@ nav {
        @extend %h2;
         color: #fff;
         
+        a{
+            color: $pinkDark;
+        }
     }
-    span{
+}
+
+/* ------ PAGE PORTFOLIO  ----- */
+
+#portfolioBody, #navWhite {
+    background-color: #fff;
+    
+}
+#portfolioBody{
+    h2{
+        @extend %h2;
         color: $pinkDark;
     }
 }
+
 
