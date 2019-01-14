@@ -3,6 +3,10 @@
     <head>
         <meta charset="UTF-8">
 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <!--        Material Icons-->
@@ -18,30 +22,7 @@
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
 
-        <!--
-<script>
-$(function() {
-$.scrollify({
-section : "section",
-sectionName : "section-name",
-interstitialSection : "",
-easing: "easeOutExpo",
-scrollSpeed: 1100,
-offset : 0,
-scrollbars: true,
-standardScrollElements: "",
-setHeights: true,
-overflowScroll: true,
-updateHash: true,
-touchScroll:true,
-before:function() {},
-after:function() {},
-afterResize:function() {},
-afterRender:function() {}
-});
-</script>
--->
-
+        <!-- CSS -->
         <link rel="stylesheet" href="./css/style.css">
 
         <title>Sarah Gueye</title>
@@ -64,100 +45,101 @@ afterRender:function() {}
 
                     <div class="sidenav right-aligned" style="transform: translateX(100%);"id="mobile-menu">
                         <div class="row">
-                           <a class="right sidenav-close" href=""><i class="material-icons ">close</i></a>
-                            
+                            <a class="right sidenav-close" href=""><i class="material-icons ">close</i></a>
+
                         </div>
                         <ul>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Skills</a></li>
-                            <li><a href="">Portfolio</a></li>
+                            <li><a href="#sectionAbout">About</a></li>
+                            <li><a href="#sectionSkills">Skills</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
                             <li><a href="">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
+        <main>
+            <!--        Section 1 - -->
+            <div class=" box row valign-wrapper example-classname">
+                <div id="section1" class="col s12 right-align">
+                    <h1 class=""> junior <br> front-end <br> web designer</h1>
 
-        <!--        Section 1 - -->
-        <div class=" box row valign-wrapper example-classname">
-            <div id="section1" class="col s12 right-align">
-                <h1 class=""> junior <br> front-end <br> web designer</h1>
-
-            </div>
-        </div>
-
-        <!--        Section 2 - About -->
-
-        <section class=" box example-classname" id="sectionAbout">
-            <div>
-                <h2>About</h2>
-            </div>
-            <div class=" container row col s12 m4 l8 center">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi assumenda dolorum excepturi voluptate iure impedit illum, praesentium unde tempora recusandae officiis veniam, non eveniet eum incidunt enim sint aut nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aliquid commodi odio nisi tempora fugit nulla doloribus vitae natus, nihil fugiat, dignissimos inventore reiciendis quas, iusto sint eum nam nobis!</p>
+                </div>
             </div>
 
-        </section>
+            <!--        Section 2 - About -->
 
-        <!--        Section 3 - Skills-->
-        <section class=" box example-classname" id="sectionSkills">
-            <div>
-                <h2>Skills</h2>
-            </div>
-
-            <div id="boxSkills" class="row">
-                <div id="codeSkills" class="col s12 l4 center">
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JAVASCRIPT</li>
-                        <li>PHP</li>
-                        <li>MYSQL</li>
-                        <li>JQUERY</li>
-                        <li>BOOTSTRAP</li>
-                        <li>MATERIALIZE</li>
-                        <li>GIT</li>
-                        <li>SASS</li>
-                        <li>WORDPRESS</li>
-                        <li>DRUPAL</li>
-                        <li>MICROSOFT OFFICE</li>
-                    </ul>
+            <section class=" box example-classname" id="sectionAbout">
+                <div>
+                    <h2>About</h2>
+                </div>
+                <div id="about" class="  row col s12 m4 l8  box valign-wrapper">
+                    <p class="center-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi assumenda dolorum excepturi voluptate iure impedit illum, praesentium unde tempora recusandae officiis veniam, non eveniet eum incidunt enim sint aut nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aliquid commodi odio nisi tempora fugit nulla doloribus vitae natus, nihil fugiat, dignissimos inventore reiciendis quas, iusto sint eum nam nobis!</p>
                 </div>
 
-                <div id="designSkills" class="col s12 l4 center">
-                    <ul>
-                        <li>PHOTOSHOP</li>
-                        <li>ILLUSTRATOR</li>
-                        <li>INDESIGN</li>
-                        <li>XD-UI</li>
-                        <li>ANIMATE</li>
-                    </ul>
+            </section>
+
+            <!--        Section 3 - Skills-->
+            <section class=" box example-classname" id="sectionSkills">
+                <div>
+                    <h2>Skills</h2>
                 </div>
 
-                <div id="softSkills" class="col s12 l4 center">
-                    <ul>
-                        <li>PATIENT</li>
-                        <li>CREATIVE</li>
-                        <li>INDEPENDANT</li>
-                        <li>RELIABLE</li>
-                        <li>CONSCIENTIOUS</li>
-                        <li>RESOURCEFUL</li>
-                        <li>TEAM /SELF WORK</li>
-                        <li>STRESS MANAGEMENT</li>
-                    </ul>
+                <div id="boxSkills" class="row">
+                    <div id="codeSkills" class="col s12 l4  valign-wrapper center">
+                        <ul class="center">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JAVASCRIPT</li>
+                            <li>PHP</li>
+                            <li>MYSQL</li>
+                            <li>JQUERY</li>
+                            <li>BOOTSTRAP</li>
+                            <li>MATERIALIZE</li>
+                            <li>GIT</li>
+                            <li>SASS</li>
+                            <li>WORDPRESS</li>
+                            <li>DRUPAL</li>
+                            <li>MICROSOFT OFFICE</li>
+                        </ul>
+                    </div>
+
+                    <div id="designSkills" class="col s12 l4 valign-wrapper">
+                        <ul class="center-align">
+                            <li>PHOTOSHOP</li>
+                            <li>ILLUSTRATOR</li>
+                            <li>INDESIGN</li>
+                            <li>XD-UI</li>
+                            <li>ANIMATE</li>
+                        </ul>
+                    </div>
+
+                    <div id="softSkills" class="col s12 l4 valign-wrapper">
+                        <ul class="center-align">
+                            <li>PATIENT</li>
+                            <li>CREATIVE</li>
+                            <li>INDEPENDANT</li>
+                            <li>RELIABLE</li>
+                            <li>CONSCIENTIOUS</li>
+                            <li>RESOURCEFUL</li>
+                            <li>TEAM /SELF WORK</li>
+                            <li>STRESS MANAGEMENT</li>
+                        </ul>
+                    </div>
+
                 </div>
+            </section>
 
-            </div>
-        </section>
+            <!-- Section - Portfolio-->
+            <section>
+                <div class=" box row valign-wrapper example-classname">
+                    <div id="sectionPortfolio" class="col s12 left-align">
+                        <h2>Have a look <br> at my <br><a href="./portfolio.html">portfolio</a></h2>
 
-        <!-- Section - Portfolio-->
-
-        <div class=" box row valign-wrapper example-classname">
-            <div id="sectionPortfolio" class="col s12 left-align">
-                <h2>Have a look <br> at my <br><a href="./portfolio.html">portfolio</a></h2>
-
-            </div>
-        </div>
-
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">

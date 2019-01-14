@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 147 24.788">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        stroke: #4963c9;
+        stroke-linecap: round;
+        stroke-width: 3px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Tracé_3" data-name="Tracé 3" class="cls-1" d="M0-33.74H147V-58.528H0Z" transform="translate(0 58.528)"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_61" data-name="Groupe 61" transform="translate(1717 381.364)">
+    <g id="Groupe_3" data-name="Groupe 3" class="cls-2" transform="translate(-1717 -381.364)">
+      <g id="Groupe_1" data-name="Groupe 1" transform="translate(9.866 0.982)">
+        <path id="Tracé_1" data-name="Tracé 1" class="cls-3" d="M-.057-15.636C4.756-12.223,9.6-8.782,13.589-4.488M10.937-27.124C7.367-23.282,3.149-19.919-.141-15.852" transform="translate(0.141 27.124)"/>
+      </g>
+      <g id="Groupe_2" data-name="Groupe 2" transform="translate(126.349 0.983)">
+        <path id="Tracé_2" data-name="Tracé 2" class="cls-3" d="M-.031,0,12.646,9.29a2.652,2.652,0,0,1,.92.932c.412.944-.748,1.823-1.758,2.467A42.5,42.5,0,0,0-.077,23.764" transform="translate(0.077)"/>
+      </g>
+    </g>
+  </g>
+</svg>

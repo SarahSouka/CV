@@ -11,21 +11,46 @@
 @import url("assets/fonts/Poppins/Poppins-Thin.ttf");
 #sectionAbout h2, #sectionSkills h2, #sectionPortfolio h2, #portfolioBody h2 {
   font-size: 10em;
-  font-family: "Big John"; }
+  font-family: "Big John";
+  margin-bottom: 0; }
 
 #section1 h1 {
   font-size: 7em;
   font-family: "Big John";
   color: #fff; }
 
+@media (max-width: 992px) {
+  #sectionAbout h2, #sectionSkills h2, #sectionPortfolio h2, #portfolioBody h2 {
+    font-size: 8em; }
+
+  #section1 h1 {
+    font-size: 4em; } }
+@media (max-width: 600px) {
+  #sectionAbout h2, #sectionSkills h2, #sectionPortfolio h2, #portfolioBody h2 {
+    font-size: 3em; }
+
+  #section1 h1 {
+    font-size: 2.5em; } }
 body, nav {
   box-shadow: none;
   background-color: #F9C0CB; }
 
+main {
+  margin-right: 30px;
+  margin-left: 30px; }
+
+@media (max-width: 600px) {
+  main {
+    margin-right: 10px;
+    margin-left: 10px; } }
 /* ------ NAV ----- */
-nav a {
+nav .logo-brand {
   color: #F16A77;
-  font-family: "Slim Joe"; }
+  font-family: "Slim Joe";
+  font-size: 1.3em;
+  margin: 15px; }
+nav .sidenav-trigger {
+  color: #F16A77; }
 nav ul a {
   font-family: "Poppins";
   color: #F16A77; }
@@ -52,7 +77,7 @@ nav ul a:hover {
     color: #4F64AE; }
 
 .sidenav-overlay {
-  background-color: #F16A77; }
+  background-color: transparent; }
 
 /* ------ SECTION 1 HOME ----- */
 .box {
@@ -62,15 +87,21 @@ nav ul a:hover {
 #sectionAbout {
   background-image: url(./SVG/formeAbout.svg);
   background-repeat: no-repeat;
-  background-size: 60%;
+  background-size: 70%;
   background-position: center; }
   #sectionAbout h2 {
     color: #F16A77; }
+  #sectionAbout #about {
+    display: flex;
+    justify-content: center; }
   #sectionAbout p {
-    color: #293376; }
+    color: #293376;
+    max-width: 600px;
+    font-size: 1.3em; }
 
 /* ------ SECTION 3 SKILLS  ----- */
 #sectionSkills #boxSkills {
+  margin-top: 100px;
   /*min-height: 350px;*/ }
 #sectionSkills h2 {
   color: #4F64AE; }
@@ -78,24 +109,36 @@ nav ul a:hover {
   min-height: 350px;
   background-image: url(SVG/codeSkills.svg);
   background-repeat: no-repeat;
-  background-size: 65%;
-  background-position: center; }
+  background-size: 70%;
+  background-position: center;
+  display: flex;
+  justify-content: center; }
   #sectionSkills #codeSkills li {
-    color: #F16A77; }
+    color: #F16A77;
+    font-size: 0.9em; }
+  #sectionSkills #codeSkills li:hover {
+    background-image: url(SVG/symbolCode.svg); }
 #sectionSkills #designSkills {
   min-height: 350px;
   background-image: url(SVG/designSkills.svg);
   background-repeat: no-repeat;
   background-size: 75%;
-  background-position: center; }
+  background-position: center;
+  display: flex;
+  justify-content: center; }
   #sectionSkills #designSkills li {
     color: #4F64AE; }
+  #sectionSkills #designSkills li:hover {
+    background-image: url(SVG/symbolDesign.svg);
+    background-repeat: no-repeat; }
 #sectionSkills #softSkills {
   min-height: 350px;
   background-image: url(SVG/softSkills.svg);
   background-repeat: no-repeat;
   background-size: 70%;
-  background-position: center; }
+  background-position: center;
+  display: flex;
+  justify-content: center; }
   #sectionSkills #softSkills li {
     color: #F16A77; }
 
