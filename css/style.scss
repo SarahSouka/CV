@@ -20,6 +20,7 @@ $titleFont: 'Big John';
 $navFont: 'Slim Joe';
 $textFont: 'Poppins';
 
+
 %section{
     
 }
@@ -60,6 +61,40 @@ nav {
     
 }
 
+/* ----- SIDE NAV -----*/
+
+.sidenav{
+    background-color: $pinkDark;
+    opacity: 0.8;
+    box-shadow: none;
+    //transform: translateX(105%);
+    
+    font-family: $textFont;
+    li{
+        a{
+            color: #fff;
+            font-size: 3em;
+            margin: 5px;
+        }
+        a:hover{
+            color: $blueLight;
+            background-color: transparent;
+        }
+        
+    }
+    .sidenav-close{
+        color: #fff;
+        margin: 10px;
+    }
+    .sidenav-close:hover{
+        color: $blueLight;
+    }
+}
+.sidenav-overlay{
+    //background-color: transparent;
+    background-color: $pinkDark;
+}
+
 
 
 /* ------ SECTION 1 HOME ----- */
@@ -75,7 +110,10 @@ nav {
 
 /* ------ SECTION 2 ABOUT ----- */
 #sectionAbout{
-    background-image: url();
+    background-image: url(./SVG/formeAbout.svg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
     h2{
         @extend %h2;
         color: $pinkDark;
@@ -87,24 +125,40 @@ nav {
 
 /* ------ SECTION 3 SKILLS  ----- */
 #sectionSkills{
+    #boxSkills{
+        /*min-height: 350px;*/
+    }
     h2{
         @extend %h2;
         color: $blueLight;
     }
     #codeSkills{
-        background-color: #fff;
+        min-height: 350px;
+        background-image: url(SVG/codeSkills.svg);
+        background-repeat: no-repeat;
+        background-size:65%;
+        background-position: center;
+        
         li{
             color: $pinkDark;
         }
     }
     #designSkills{
-        background-color: #fff;
+        min-height: 350px;
+        background-image: url(SVG/designSkills.svg);
+        background-repeat: no-repeat;
+        background-size:75%;
+        background-position: center;
         li{
             color: $blueLight;
         }
     }
     #softSkills{
-        background-color: #fff;
+        min-height: 350px;
+        background-image: url(SVG/softSkills.svg);
+        background-repeat: no-repeat;
+        background-size:70%;
+        background-position: center;
         li{
             color: $pinkDark;
         }
@@ -121,6 +175,9 @@ nav {
         a{
             color: $pinkDark;
         }
+        a:hover{
+            color: $blueLight;
+        }
     }
 }
 
@@ -134,6 +191,26 @@ nav {
     h2{
         @extend %h2;
         color: $pinkDark;
+    }
+    .portfolioThumbs{
+        padding: 15px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        
+    }
+    .modal{
+        width:80%;
+        height: 80%;
+    }
+
+    #closeModal{
+        color: $pinkDark;
+    }
+    h4{
+        font-family: $titleFont
+    }
+    p{
+        font-family: $textFont;
     }
 }
 

@@ -15,31 +15,31 @@
         </script>
 
         <!--        Scrollify -->
-        
+
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
-        
-<!--
-        <script>
-            $(function() {
-                $.scrollify({
-                    section : "section",
-                    sectionName : "section-name",
-                    interstitialSection : "",
-                    easing: "easeOutExpo",
-                    scrollSpeed: 1100,
-                    offset : 0,
-                    scrollbars: true,
-                    standardScrollElements: "",
-                    setHeights: true,
-                    overflowScroll: true,
-                    updateHash: true,
-                    touchScroll:true,
-                    before:function() {},
-                    after:function() {},
-                    afterResize:function() {},
-                    afterRender:function() {}
-                });
-        </script>
+
+        <!--
+<script>
+$(function() {
+$.scrollify({
+section : "section",
+sectionName : "section-name",
+interstitialSection : "",
+easing: "easeOutExpo",
+scrollSpeed: 1100,
+offset : 0,
+scrollbars: true,
+standardScrollElements: "",
+setHeights: true,
+overflowScroll: true,
+updateHash: true,
+touchScroll:true,
+before:function() {},
+after:function() {},
+afterResize:function() {},
+afterRender:function() {}
+});
+</script>
 -->
 
         <link rel="stylesheet" href="./css/style.css">
@@ -50,24 +50,30 @@
     <body>
 
         <!--    Navigation -->
-        <header>
+        <header class="">
             <nav class="nav-wrapper">
                 <div class="s">
                     <a href="#" class="logo-brand">Sarah Gueye</a>
-                    <a href="" class="sidenav-trigger right" data-target="mobile-menu">
+                    <a href="" class="sidenav-trigger show-on-large right" data-target="mobile-menu">
                         <i class="material-icons">menu</i>
                     </a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="">cv</a></li>
+                        <li><a href="./assets/images/SarahGueye-cv.pdf">cv</a></li>
                         <li><a href="">contact</a></li>
                     </ul>
 
-                    <ul class="sidenav" id="mobile-menu">
-                        <li><a href="">About</a></li>
-                        <li><a href="">Skills</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
+                    <div class="sidenav right-aligned" style="transform: translateX(100%);"id="mobile-menu">
+                        <div class="row">
+                           <a class="right sidenav-close" href=""><i class="material-icons ">close</i></a>
+                            
+                        </div>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Skills</a></li>
+                            <li><a href="">Portfolio</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -98,7 +104,7 @@
                 <h2>Skills</h2>
             </div>
 
-            <div class="row">
+            <div id="boxSkills" class="row">
                 <div id="codeSkills" class="col s12 l4 center">
                     <ul>
                         <li>HTML5</li>
@@ -168,12 +174,18 @@
             $(function() {
                 $.scrollify({
                     section : ".example-classname",
-                    afterRender:function() {},
-                    before:function() {},
                     scrollbars: true,
+                    interstitialSection: "header",
+                    easing: "easeOutExpo",
+                    scrollSpeed: 1100,
+                    updateHash: true,
+                    before:function() {},
+                    after:function() {},
+                    afterResize:function() {},
+                    afterRender:function() {}
 
                 });
-               
+
             });
         </script>
 

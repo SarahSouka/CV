@@ -32,31 +32,70 @@ nav ul a {
 nav ul a:hover {
   background-color: transparent; }
 
+/* ----- SIDE NAV -----*/
+.sidenav {
+  background-color: #F16A77;
+  opacity: 0.8;
+  box-shadow: none;
+  font-family: "Poppins"; }
+  .sidenav li a {
+    color: #fff;
+    font-size: 3em;
+    margin: 5px; }
+  .sidenav li a:hover {
+    color: #4F64AE;
+    background-color: transparent; }
+  .sidenav .sidenav-close {
+    color: #fff;
+    margin: 10px; }
+  .sidenav .sidenav-close:hover {
+    color: #4F64AE; }
+
+.sidenav-overlay {
+  background-color: #F16A77; }
+
 /* ------ SECTION 1 HOME ----- */
 .box {
   height: 600px; }
 
 /* ------ SECTION 2 ABOUT ----- */
 #sectionAbout {
-  background-image: url(); }
+  background-image: url(./SVG/formeAbout.svg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center; }
   #sectionAbout h2 {
     color: #F16A77; }
   #sectionAbout p {
     color: #293376; }
 
 /* ------ SECTION 3 SKILLS  ----- */
+#sectionSkills #boxSkills {
+  /*min-height: 350px;*/ }
 #sectionSkills h2 {
   color: #4F64AE; }
 #sectionSkills #codeSkills {
-  background-color: #fff; }
+  min-height: 350px;
+  background-image: url(SVG/codeSkills.svg);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center; }
   #sectionSkills #codeSkills li {
     color: #F16A77; }
 #sectionSkills #designSkills {
-  background-color: #fff; }
+  min-height: 350px;
+  background-image: url(SVG/designSkills.svg);
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center; }
   #sectionSkills #designSkills li {
     color: #4F64AE; }
 #sectionSkills #softSkills {
-  background-color: #fff; }
+  min-height: 350px;
+  background-image: url(SVG/softSkills.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center; }
   #sectionSkills #softSkills li {
     color: #F16A77; }
 
@@ -65,6 +104,8 @@ nav ul a:hover {
   color: #fff; }
   #sectionPortfolio h2 a {
     color: #F16A77; }
+  #sectionPortfolio h2 a:hover {
+    color: #4F64AE; }
 
 /* ------ PAGE PORTFOLIO  ----- */
 #portfolioBody, #navWhite {
@@ -72,5 +113,16 @@ nav ul a:hover {
 
 #portfolioBody h2 {
   color: #F16A77; }
-
-/*# sourceMappingURL=style.css.map */
+#portfolioBody .portfolioThumbs {
+  padding: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px; }
+#portfolioBody .modal {
+  width: 80%;
+  height: 80%; }
+#portfolioBody #closeModal {
+  color: #F16A77; }
+#portfolioBody h4 {
+  font-family: "Big John"; }
+#portfolioBody p {
+  font-family: "Poppins"; }

@@ -26,7 +26,7 @@
             <nav id="navWhite" class="nav-wrapper">
                 <div class="s">
                     <a href="./index.html" class="logo-brand">Sarah Gueye</a>
-                    <a href="" class="sidenav-trigger right" data-target="mobile-menu">
+                    <a href="" class="sidenav-trigger show-on-large right" data-target="mobile-menu">
                         <i class="material-icons">menu</i>
                     </a>
                     <ul class="right hide-on-med-and-down">
@@ -34,7 +34,7 @@
                         <li><a href="">contact</a></li>
                     </ul>
 
-                    <ul class="sidenav right" id="mobile-menu">
+                    <ul class="sidenav right-aligned" id="mobile-menu">
                         <li><a href="">About</a></li>
                         <li><a href="">Skills</a></li>
                         <li><a href="">Portfolio</a></li>
@@ -49,18 +49,54 @@
                 <h2>Portfolio</h2>
             </div>
             <div class="row">
-                <div class="col s12 m6 l4">
-                    <a class="modal-trigger" href="#modal1"><img src="./assets/images/martin-adams-740397-unsplash.jpg" width="300px"  alt=""></a>
+                <div class="col s12 m6 l4 portfolioThumbs">
+                    <a class="modal-trigger" href="#modal1"><img class="col s12 m12 l12" src="./assets/images/martin-adams-740397-unsplash.jpg" width="350px"  alt=""></a>
                 </div>
+
+                <div class="col s12 m6 l4 portfolioThumbs">
+                    <a class="modal-trigger" href="#modal1"><img class="col s12 m12 l12" src="./assets/images/martin-adams-740397-unsplash.jpg" width="350px"  alt=""></a>
+                </div>
+                <div class="col s12 m6 l4 portfolioThumbs">
+                    <a class="modal-trigger" href="#modal1"><img class="col s12 m12 l12" src="./assets/images/martin-adams-740397-unsplash.jpg" width="350px"  alt=""></a>
+                </div>
+                <div class="col s12 m6 l4 portfolioThumbs">
+                    <a class="modal-trigger" href="#modal1"><img class="col s12 m12 l12" src="./assets/images/martin-adams-740397-unsplash.jpg" width="350px"  alt=""></a>
+                </div>
+                <div class="col s12 m6 l4 portfolioThumbs">
+                    <a class="modal-trigger" href="#modal1"><img class="col s12 m12 l12" src="./assets/images/martin-adams-740397-unsplash.jpg" width="350px"  alt=""></a>
+                </div>
+                <div class="col s12 m6 l4 portfolioThumbs">
+                    <a class="modal-trigger" href="#modal1"><img class="col s12 m12 l12" src="./assets/images/martin-adams-740397-unsplash.jpg" width="350px"  alt=""></a>
+                </div>
+
                 <!-- Modal Structure -->
-                <div id="modal1" class="modal">
+                <div id="modal1" class="modal modal-fixed-header">
                     <div class="modal-content">
-                        <h4>Modal Header</h4>
-                        <p>A bunch of text</p>
+
+                        <!--Modal header close button-->
+                        <div class="row">
+                            <div id="closeModal" class="right"><i class="material-icons modal-close">close</i>
+                            </div>
+                        </div>
+                        <!--modal contenu-->
+
+                        <div class="row">
+                            <div class="col s12 m12 l6">
+                                <img src="./assets/images/martin-adams-740397-unsplash.jpg" width="100%" alt="">
+                            </div>
+                            <div class="col s12 m12 l6">
+                                <h4>Project</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quasi facilis fugiat deleniti officia maiores! Deserunt sapiente, eaque iure cumque tempore saepe in soluta natus sit laudantium. Animi reiciendis ullam dicta ex tenetur aperiam corporis, vitae culpa autem magni quidem explicabo veniam iste, neque quia officiis quod magnam, iusto cum nulla. Facilis, aliquid, ullam. Quasi, adipisci dignissimos! Earum minima fuga blanditiis ullam doloribus. Aliquam autem nulla sint odio placeat facere corporis, sit alias doloremque vel eius, nisi officiis dignissimos reiciendis maxime ullam, inventore dolorum laboriosam aliquid repellendus ut repudiandae. Voluptate autem ratione excepturi voluptates et. Blanditiis vitae commodi culpa hic deleniti architecto aut quam ullam, ea, aliquam aperiam consectetur eligendi dolorum fuga natus exercitationem unde consequuntur, similique tempore dolor.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div col s12 m12 l12>
+                                <img src="./assets/images/martin-adams-740397-unsplash.jpg" width="100%" alt="">
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-                    </div>
+
                 </div>
 
 
@@ -81,14 +117,14 @@
             $(document).ready(function(){
                 $('.sidenav').sidenav();
             });
-            
+
             $(document).ready(function(){
                 $('.modal').modal();
             });
 
         </script>
-        
- 
+
+
 
     </body>
 </html>
