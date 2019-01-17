@@ -9,7 +9,7 @@
 @import url("assets/fonts/Poppins/Poppins-Medium.ttf");
 @import url("assets/fonts/Poppins/Poppins-SemiBold.ttf");
 @import url("assets/fonts/Poppins/Poppins-Thin.ttf");
-#sectionAbout h2, #sectionSkills h2, #sectionPortfolio h2, #portfolioBody h2 {
+#sectionAbout h2, #sectionSkills h2, #sectionPortfolio h2, #portfolioBody h2, #contactBody h2 {
   font-size: 10em;
   font-family: "Big John";
   margin-bottom: 0; }
@@ -20,13 +20,13 @@
   color: #fff; }
 
 @media (max-width: 992px) {
-  #sectionAbout h2, #sectionSkills h2, #sectionPortfolio h2, #portfolioBody h2 {
+  #sectionAbout h2, #sectionSkills h2, #sectionPortfolio h2, #portfolioBody h2, #contactBody h2 {
     font-size: 8em; }
 
   #section1 h1 {
     font-size: 4em; } }
 @media (max-width: 600px) {
-  #sectionAbout h2, #sectionSkills h2, #sectionPortfolio h2, #portfolioBody h2 {
+  #sectionAbout h2, #sectionSkills h2, #sectionPortfolio h2, #portfolioBody h2, #contactBody h2 {
     font-size: 3em; }
 
   #section1 h1 {
@@ -46,16 +46,23 @@ main {
 /* ------ NAV ----- */
 nav .logo-brand {
   color: #F16A77;
-  font-family: "Slim Joe";
-  font-size: 1.3em;
-  margin: 15px; }
+  font-family: "Poppins Light";
+  font-size: 1.5em;
+  margin: 15px;
+  text-transform: uppercase; }
+nav .logo-brand:hover {
+  text-decoration: overline; }
 nav .sidenav-trigger {
   color: #F16A77; }
+nav .sidenav-trigger:hover {
+  color: #4F64AE; }
 nav ul a {
   font-family: "Poppins";
-  color: #F16A77; }
+  color: #F16A77;
+  font-size: 1.3em; }
 nav ul a:hover {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #4F64AE; }
 
 /* ----- SIDE NAV -----*/
 .sidenav {
@@ -83,6 +90,21 @@ nav ul a:hover {
 .box {
   height: 600px; }
 
+/*@media (max-width:992px){
+    .box{
+        height: 400px;
+    }
+}*/
+#section1 h1 span {
+  color: #4F64AE; }
+#section1 h1 span:hover {
+  color: #F16A77; }
+#section1 p {
+  color: #F16A77;
+  font-family: 'Poppins SemiBold'; }
+#section1 p:hover {
+  text-decoration: overline; }
+
 /* ------ SECTION 2 ABOUT ----- */
 #sectionAbout {
   background-image: url(./SVG/formeAbout.svg);
@@ -93,12 +115,21 @@ nav ul a:hover {
     color: #F16A77; }
   #sectionAbout #about {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-content: flex-start; }
   #sectionAbout p {
-    color: #293376;
+    color: #4F64AE;
     max-width: 600px;
-    font-size: 1.3em; }
+    max-height: 400px;
+    font-size: 1.3em;
+    padding: 30px; }
 
+@media (max-width: 992px) {
+  #sectionAbout {
+    background-image: none; }
+    #sectionAbout p {
+      text-align: justify;
+      color: #fff; } }
 /* ------ SECTION 3 SKILLS  ----- */
 #sectionSkills #boxSkills {
   margin-top: 100px;
@@ -115,9 +146,19 @@ nav ul a:hover {
   justify-content: center; }
   #sectionSkills #codeSkills li {
     color: #F16A77;
-    font-size: 0.9em; }
+    font-size: 0.9em;
+    padding-right: 20px;
+    padding-left: 20px; }
   #sectionSkills #codeSkills li:hover {
-    background-image: url(SVG/symbolCode.svg); }
+    background-image: url(SVG/symbolCode.svg);
+    background-repeat: no-repeat;
+    background-size: 100%; }
+@media (max-width: 992px) {
+  #sectionSkills #codeSkills {
+    background-size: 40%; } }
+@media (max-width: 600px) {
+  #sectionSkills #codeSkills {
+    background-size: 80%; } }
 #sectionSkills #designSkills {
   min-height: 350px;
   background-image: url(SVG/designSkills.svg);
@@ -127,10 +168,18 @@ nav ul a:hover {
   display: flex;
   justify-content: center; }
   #sectionSkills #designSkills li {
-    color: #4F64AE; }
+    color: #4F64AE;
+    padding: 5px; }
   #sectionSkills #designSkills li:hover {
     background-image: url(SVG/symbolDesign.svg);
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: 115%; }
+@media (max-width: 992px) {
+  #sectionSkills #designSkills {
+    background-size: 40%; } }
+@media (max-width: 600px) {
+  #sectionSkills #designSkills {
+    background-size: 80%; } }
 #sectionSkills #softSkills {
   min-height: 350px;
   background-image: url(SVG/softSkills.svg);
@@ -140,7 +189,19 @@ nav ul a:hover {
   display: flex;
   justify-content: center; }
   #sectionSkills #softSkills li {
-    color: #F16A77; }
+    color: #F16A77;
+    padding-right: 15px;
+    padding-left: 15px; }
+  #sectionSkills #softSkills li:hover {
+    background-image: url(SVG/symbolSoft.svg);
+    background-repeat: no-repeat;
+    background-size: 105%; }
+@media (max-width: 992px) {
+  #sectionSkills #softSkills {
+    background-size: 40%; } }
+@media (max-width: 600px) {
+  #sectionSkills #softSkills {
+    background-size: 80%; } }
 
 /* ------ SECTION 4 PORTFOLIO  ----- */
 #sectionPortfolio h2 {
@@ -150,6 +211,9 @@ nav ul a:hover {
   #sectionPortfolio h2 a:hover {
     color: #4F64AE; }
 
+@media (max-width: 992px) {
+  h2 {
+    font-size: 6em; } }
 /* ------ PAGE PORTFOLIO  ----- */
 #portfolioBody, #navWhite {
   background-color: #fff; }
@@ -169,3 +233,116 @@ nav ul a:hover {
   font-family: "Big John"; }
 #portfolioBody p {
   font-family: "Poppins"; }
+
+/* ----- PAGE CONTACT -----*/
+#contactBody {
+  background-color: #fff; }
+  #contactBody h2 {
+    color: #F16A77;
+    font-size: 9em;
+    margin-bottom: 20px; }
+  #contactBody #contact {
+    background-image: url(SVG/formeContact.svg);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: center; }
+    #contactBody #contact h3 {
+      font-family: "Big John";
+      color: #fff;
+      font-size: 2em; }
+    #contactBody #contact p {
+      color: #F16A77;
+      font-family: 'Poppins SemiBold'; }
+    #contactBody #contact a {
+      color: #F9C0CB;
+      margin: 10px; }
+      #contactBody #contact a i {
+        font-size: 1em;
+        margin: 5px; }
+    #contactBody #contact a:hover {
+      color: #F16A77; }
+    #contactBody #contact #stalk i {
+      font-size: 1.8em; }
+
+@media (max-width: 992px) {
+  #contactBody {
+    background-color: #4F64AE; }
+    #contactBody #contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    #contactBody h2 {
+      font-size: 6em; } }
+@media (max-width: 600px) {
+  #contact h2 {
+    font-size: 2.5em; } }
+/* PAGINATION */
+/*
+.pag {
+	position:fixed;
+	left:50px;
+	top: 50%;
+  transform: translateY(-50%);
+
+	font-size:1.4em;
+	z-index: 10;
+}
+.pag a {
+	display:block;
+	height:20px;
+	margin-bottom:5px;
+	color:white;
+	position:relative;
+	padding:4px;
+   
+}
+.pag a.active:after {
+	box-shadow:inset 0 0 0 5px;
+    //background-color: #fff;
+}
+.pag a .hover-text {
+	position:absolute;
+	right:15px;
+	top:7px;
+	opacity:0;
+	-webkit-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+	padding-right: 15px;
+}
+.pag a:hover .hover-text {
+	opacity: 1;
+}
+.pag a:after {
+	-webkit-transition:box-shadow 0.5s ease;
+	transition:box-shadow 0.5s ease;
+	width:10px;
+	height:10px;
+	display: block;
+	border:1px solid;
+	border-radius:50%;
+	content:'';
+	position: absolute;
+	margin:auto;
+	top:0;
+	right:4px;
+	bottom:0;
+    color:#fff;
+}
+.panel4 .content {
+  &.moved{
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0px, 0px, 0px);
+  }
+	text-align:center;
+	opacity:0;
+	-webkit-transition:all 0.8s ease 0.5s;
+	transition:all 0.8s ease 0.5s;
+	    -webkit-transform: translate3d(0px, 30px, 0px);
+    transform: translate3d(0px, 30px, 0px);
+	width:65%;
+	margin:auto;
+	left:0;
+	right:0;
+}
+*/

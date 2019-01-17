@@ -17,11 +17,17 @@
                 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
                 crossorigin="anonymous">
         </script>
+        
 
         <!--        Scrollify -->
+        
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+        <!--<script src="JS/index.js"></script>-->
 
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        
         <!-- CSS -->
         <link rel="stylesheet" href="./css/style.css">
 
@@ -40,7 +46,7 @@
                     </a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="./assets/images/SarahGueye-cv.pdf">cv</a></li>
-                        <li><a href="">contact</a></li>
+                        <li><a href="contact.html">contact</a></li>
                     </ul>
 
                     <div class="sidenav right-aligned" style="transform: translateX(100%);"id="mobile-menu">
@@ -49,10 +55,10 @@
 
                         </div>
                         <ul>
-                            <li><a href="#sectionAbout">About</a></li>
+                            <li><a href="#sectAbout">About</a></li>
                             <li><a href="#sectionSkills">Skills</a></li>
                             <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -60,20 +66,21 @@
         </header>
         <main>
             <!--        Section 1 - -->
-            <div class=" box row valign-wrapper example-classname">
+            <div class=" box row valign-wrapper example-classname ">
                 <div id="section1" class="col s12 right-align">
-                    <h1 class=""> junior <br> front-end <br> web designer</h1>
-
+                    <h1 class=""> junior <br> front-end <br> web <span>designer</span></h1>
+                    <!--<a href="./contact.html">*Looking for an internship !</a>-->
+                    <p>*Looking for an internship !</p>
                 </div>
             </div>
 
             <!--        Section 2 - About -->
 
-            <section class=" box example-classname" id="sectionAbout">
+            <section class=" box example-classname " id="sectionAbout">
                 <div>
                     <h2>About</h2>
                 </div>
-                <div id="about" class="  row col s12 m4 l8  box valign-wrapper">
+                <div id="about" class="  row col s12 m4 l8  box ">
                     <p class="center-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi assumenda dolorum excepturi voluptate iure impedit illum, praesentium unde tempora recusandae officiis veniam, non eveniet eum incidunt enim sint aut nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aliquid commodi odio nisi tempora fugit nulla doloribus vitae natus, nihil fugiat, dignissimos inventore reiciendis quas, iusto sint eum nam nobis!</p>
                 </div>
 
@@ -100,7 +107,7 @@
                             <li>SASS</li>
                             <li>WORDPRESS</li>
                             <li>DRUPAL</li>
-                            <li>MICROSOFT OFFICE</li>
+                            <!--<li>MICROSOFT OFFICE</li>-->
                         </ul>
                     </div>
 
@@ -123,7 +130,7 @@
                             <li>CONSCIENTIOUS</li>
                             <li>RESOURCEFUL</li>
                             <li>TEAM /SELF WORK</li>
-                            <li>STRESS MANAGEMENT</li>
+                            <!--<li>STRESS MANAGEMENT</li>-->
                         </ul>
                     </div>
 
@@ -134,23 +141,27 @@
             <section>
                 <div class=" box row valign-wrapper example-classname">
                     <div id="sectionPortfolio" class="col s12 left-align">
-                        <h2>Have a look <br> at my <br><a href="./portfolio.html">portfolio</a></h2>
+                        <h2>Take a look <br> at my <br><a href="./portfolio.html">portfolio</a></h2>
 
                     </div>
+                    <!--<a href="./contact.html">and contact me !</a>-->
                 </div>
             </section>
         </main>
 
+        
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
         </script>
 
+       <!--SIDENAV-->
         <script>
             $(document).ready(function(){
                 $('.sidenav').sidenav();
             });
 
         </script>
+        
         <!--        Scrollify -->
         <script>
             $(function() {

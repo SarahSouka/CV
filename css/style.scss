@@ -17,7 +17,8 @@ $blueLight: #4F64AE;
 $blueDark: #293376;
 
 $titleFont: 'Big John';
-$navFont: 'Slim Joe';
+//$navFont: 'Slim Joe';
+$navFont: 'Poppins Light';
 $textFont: 'Poppins';
 
 
@@ -77,19 +78,30 @@ nav {
     .logo-brand {
     color: $pinkDark;
     font-family: $navFont;
-    font-size: 1.3em;  
-    margin: 15px;    
+    font-size: 1.5em;  
+    margin: 15px;
+    text-transform: uppercase;    
+    }
+    .logo-brand:hover{
+        text-decoration: overline;
+        //font-size: 1.6em;
     }
     .sidenav-trigger{
         color: $pinkDark;
+    }
+    .sidenav-trigger:hover{
+        color: $blueLight;
     }
     ul{
         a{
             font-family: $textFont;
             color: $pinkDark;
+            font-size: 1.3em;  
         }
         a:hover{
             background-color: transparent;
+            color:$blueLight;
+            //text-decoration: overline;
         }
     }
     
@@ -136,9 +148,27 @@ nav {
 .box{
     height: 600px;
 }
+/*@media (max-width:992px){
+    .box{
+        height: 400px;
+    }
+}*/
 #section1{
     h1{
         @extend %h1;
+        span{
+            color: $blueLight;
+        }
+        span:hover{
+            color: $pinkDark;
+        }
+    }
+    p{
+        color: $pinkDark;
+        font-family: 'Poppins SemiBold';
+    }
+    p:hover{
+        text-decoration:overline;
     }
     
 }
@@ -156,14 +186,27 @@ nav {
     #about{
         display: flex;
         justify-content: center;
+        align-content: flex-start;
     }
     p{
-        color: $blueDark;
+        color: $blueLight;
         max-width: 600px;
+        max-height: 400px;
         font-size:1.3em;
+        padding: 30px;
     }
 }
-
+@media (max-width:992px){
+    #sectionAbout{
+    //background-size: 100%;    
+    background-image: none;
+    //background-color: #fff;    
+        p{
+            text-align: justify;
+            color: #fff;
+        }
+    }
+}
 /* ------ SECTION 3 SKILLS  ----- */
 #sectionSkills{
     #boxSkills{
@@ -185,11 +228,27 @@ nav {
         li{
             color: $pinkDark;
             font-size: 0.9em;
+            padding-right: 20px;
+            padding-left: 20px;
         }
         li:hover{
-             background-image: url(SVG/symbolCode.svg);
+            background-image: url(SVG/symbolCode.svg);
+            background-repeat:no-repeat;
+            background-size:100%;
+           
         }
     }
+    @media (max-width:992px){
+    #codeSkills{
+    background-size:40%;
+        }
+    }
+    @media (max-width:600px){
+    #codeSkills{
+    background-size:80%;
+        }
+    }    
+
     #designSkills{
         min-height: 350px;
         background-image: url(SVG/designSkills.svg);
@@ -200,10 +259,22 @@ nav {
         justify-content: center;
         li{
             color: $blueLight;
+            padding: 5px;
         }
          li:hover{
             background-image: url(SVG/symbolDesign.svg);
-            background-repeat: no-repeat;
+            background-repeat:no-repeat;
+            background-size:115%; 
+        }
+    }
+    @media (max-width:992px){
+    #designSkills{
+    background-size:40%;
+        }
+    }
+    @media (max-width:600px){
+    #designSkills{
+    background-size:80%;
         }
     }
     #softSkills{
@@ -216,6 +287,23 @@ nav {
         justify-content: center;
         li{
             color: $pinkDark;
+            padding-right:15px;
+            padding-left: 15px;
+        }
+        li:hover{
+            background-image: url(SVG/symbolSoft.svg);
+            background-repeat:no-repeat;
+            background-size:105%; 
+        }
+    }
+    @media (max-width:992px){
+    #softSkills{
+    background-size:40%;
+        }
+    }
+    @media (max-width:600px){
+    #softSkills{
+    background-size:80%;
         }
     }
 }
@@ -236,7 +324,11 @@ nav {
         
     }
 }
-
+@media (max-width:992px){
+    h2{
+        font-size: 6em;
+    }
+}
 /* ------ PAGE PORTFOLIO  ----- */
 
 #portfolioBody, #navWhite {
@@ -270,4 +362,143 @@ nav {
     }
 }
 
+/* ----- PAGE CONTACT -----*/
 
+#contactBody{
+    background-color: #fff;
+    
+    h2{
+        @extend %h2;
+        color: $pinkDark;
+        font-size: 9em;
+        margin-bottom: 20px;
+    }
+    #contact{
+        background-image: url(SVG/formeContact.svg);
+        background-repeat: no-repeat;
+        background-size:85%;
+        background-position: center;
+        
+        h3{
+            font-family: $titleFont;
+            color: #fff;
+            font-size: 2em;
+        }
+        p{
+            color: $pinkDark;
+            font-family: 'Poppins SemiBold';
+        }
+        p:hover{
+            
+        }
+        a{
+            color: $pinkLight;
+            margin: 10px;
+            i{
+                font-size: 1em;
+                margin: 5px;
+            }
+        }
+        a:hover{
+           color: $pinkDark;
+            
+        }
+        #stalk{
+            i{
+                font-size: 1.8em;
+            }
+        }
+    }
+}
+@media (max-width:992px){
+    #contactBody{
+        background-color: $blueLight; 
+        #contact{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h2{
+            font-size: 6em;
+        }
+    }
+}
+@media (max-width:600px){
+    #contact{
+        h2{
+            font-size: 2.5em;
+            
+        } 
+    }
+}
+ 
+/* PAGINATION */
+/*
+.pag {
+	position:fixed;
+	left:50px;
+	top: 50%;
+  transform: translateY(-50%);
+
+	font-size:1.4em;
+	z-index: 10;
+}
+.pag a {
+	display:block;
+	height:20px;
+	margin-bottom:5px;
+	color:white;
+	position:relative;
+	padding:4px;
+   
+}
+.pag a.active:after {
+	box-shadow:inset 0 0 0 5px;
+    //background-color: #fff;
+}
+.pag a .hover-text {
+	position:absolute;
+	right:15px;
+	top:7px;
+	opacity:0;
+	-webkit-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+	padding-right: 15px;
+}
+.pag a:hover .hover-text {
+	opacity: 1;
+}
+.pag a:after {
+	-webkit-transition:box-shadow 0.5s ease;
+	transition:box-shadow 0.5s ease;
+	width:10px;
+	height:10px;
+	display: block;
+	border:1px solid;
+	border-radius:50%;
+	content:'';
+	position: absolute;
+	margin:auto;
+	top:0;
+	right:4px;
+	bottom:0;
+    color:#fff;
+}
+.panel4 .content {
+  &.moved{
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0px, 0px, 0px);
+  }
+	text-align:center;
+	opacity:0;
+	-webkit-transition:all 0.8s ease 0.5s;
+	transition:all 0.8s ease 0.5s;
+	    -webkit-transform: translate3d(0px, 30px, 0px);
+    transform: translate3d(0px, 30px, 0px);
+	width:65%;
+	margin:auto;
+	left:0;
+	right:0;
+}
+*/
