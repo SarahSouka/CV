@@ -17,17 +17,17 @@
                 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
                 crossorigin="anonymous">
         </script>
-        
+
 
         <!--        Scrollify -->
-        
+
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
         <!--<script src="JS/index.js"></script>-->
 
         <!--Font Awesome-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        
+
         <!-- CSS -->
         <link rel="stylesheet" href="./css/style.css">
 
@@ -65,6 +65,7 @@
             </nav>
         </header>
         <main>
+           
             <!--        Section 1 - -->
             <div class=" box row valign-wrapper example-classname ">
                 <div id="section1" class="col s12 right-align">
@@ -73,6 +74,9 @@
                     <p>*Looking for an internship !</p>
                 </div>
             </div>
+            <div>
+                    <button onclick="topFunction()" id="myBtn" class="btn-floating right"><i class="large material-icons">arrow_upward</i></button>
+                </div>
 
             <!--        Section 2 - About -->
 
@@ -81,7 +85,7 @@
                     <h2>About</h2>
                 </div>
                 <div id="about" class="  row col s12 m4 l8  box ">
-                    <p class="center-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi assumenda dolorum excepturi voluptate iure impedit illum, praesentium unde tempora recusandae officiis veniam, non eveniet eum incidunt enim sint aut nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aliquid commodi odio nisi tempora fugit nulla doloribus vitae natus, nihil fugiat, dignissimos inventore reiciendis quas, iusto sint eum nam nobis!</p>
+                    <p class="center-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi assumenda dolorum excepturi voluptate iure impedit illum, praesentium unde tempora recusandae officiis veniam, non eveniet eum incidunt enim sint aut nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aliquid commodi odio nisi tempora fugit nulla doloribus vitae natus, nihil fugiat, dignissimos inventore reiciendis quas, iusto sint eum nam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt suscipit ullam, nesciunt sapiente architecto dolorem, harum eaque reprehenderit rerum quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, veritatis.</p>
                 </div>
 
             </section>
@@ -145,23 +149,29 @@
 
                     </div>
                     <!--<a href="./contact.html">and contact me !</a>-->
+                    
+                    
                 </div>
+
+                
             </section>
+
+
         </main>
 
-        
+
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
         </script>
 
-       <!--SIDENAV-->
+        <!--SIDENAV-->
         <script>
             $(document).ready(function(){
                 $('.sidenav').sidenav();
             });
 
         </script>
-        
+
         <!--        Scrollify -->
         <script>
             $(function() {
@@ -180,6 +190,25 @@
                 });
 
             });
+        </script>
+
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
         </script>
 
     </body>

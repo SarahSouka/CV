@@ -86,6 +86,15 @@ nav ul a:hover {
 .sidenav-overlay {
   background-color: transparent; }
 
+/*-----BOUTON TOP-----*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  background-color: #F16A77; }
+
 /* ------ SECTION 1 HOME ----- */
 .box {
   height: 600px; }
