@@ -229,10 +229,14 @@ nav ul a:hover {
 
 #portfolioBody h2 {
   color: #F16A77; }
+#portfolioBody h3 {
+  font-family: "Big John";
+  color: #F9C0CB; }
+#portfolioBody a {
+  color: #F16A77; }
 #portfolioBody .portfolioThumbs {
   padding: 15px;
-  padding-bottom: 20px;
-  padding-top: 20px; }
+  padding-bottom: 20px; }
 #portfolioBody .modal {
   width: 80%;
   height: 80%; }
@@ -355,3 +359,5 @@ nav ul a:hover {
 	right:0;
 }
 */
+
+/*# sourceMappingURL=style.css.map */

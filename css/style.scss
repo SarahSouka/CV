@@ -349,13 +349,36 @@ nav {
         @extend %h2;
         color: $pinkDark;
     }
+    h3{
+        font-family: $titleFont;
+        color: $pinkLight;
+    }
+    .web{
+        em{
+            //color: $blueLight;
+        }
+    }
+    .graphic{
+        em{
+           // color: $pinkDark;
+        }
+    }
+    a{
+        color: $pinkDark;
+    }
+
     .portfolioThumbs{
         padding: 15px;
         padding-bottom: 20px;
-        padding-top: 20px;
+        //padding-top: 20px;
+        
         
     }
     .portfolioThumbs:hover{
+        
+    }
+    #projet1{
+        //background-color: $blueLight;
         
     }
     .modal{

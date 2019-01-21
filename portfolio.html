@@ -1,301 +1,342 @@
-    <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
 
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <!-- Compiled and minified CSS -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-            <!--        Material Icons-->
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--        Material Icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-            <!--Jquery -->
-            <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-                    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                    crossorigin="anonymous">
-            </script>
+        <!--Jquery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous">
+        </script>
 
-            <!--Font Awesome-->
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-            <!-- CSS -->
-            <link rel="stylesheet" href="./css/style.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css">
 
-            <title>Sarah Gueye</title>
+        <title>Sarah Gueye</title>
 
-        </head>
-        <body id="portfolioBody">
+    </head>
+    <body id="portfolioBody">
 
-            <!--    Navigation -->
-            <header class="">
-                <nav id="navWhite" class="nav-wrapper">
-                    <div class="s">
-                        <a href="./index.html" class="logo-brand">Sarah Gueye</a>
-                        <a href="" class="sidenav-trigger show-on-large right" data-target="mobile-menu">
-                            <i class="material-icons">menu</i>
-                        </a>
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="./assets/images/SarahGueye-cv.pdf">cv</a></li>
-                            <li><a href="contact.html">contact</a></li>
+        <!--    Navigation -->
+        <header class="">
+            <nav id="navWhite" class="nav-wrapper">
+                <div class="s">
+                    <a href="./index.html" class="logo-brand">Sarah Gueye</a>
+                    <a href="" class="sidenav-trigger show-on-large right" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="./assets/images/SarahGueye-cv.pdf">cv</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+
+                    <div class="sidenav right-aligned" style="transform: translateX(100%);"id="mobile-menu">
+                        <div class="row">
+                            <a class="right sidenav-close" href=""><i class="material-icons ">close</i></a>
+
+                        </div>
+                        <ul>
+                            <li><a href="./index.html#3">About</a></li>
+                            <li><a href="./index.html#4">Skills</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
-
-                        <div class="sidenav right-aligned" style="transform: translateX(100%);"id="mobile-menu">
-                            <div class="row">
-                                <a class="right sidenav-close" href=""><i class="material-icons ">close</i></a>
-
-                            </div>
-                            <ul>
-                                <li><a href="./index.html#3">About</a></li>
-                                <li><a href="./index.html#4">Skills</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
                     </div>
-                </nav>
-            </header>
-
-            <main>
-                <div>
-                    <h2>Portfolio</h2>
                 </div>
-                <!--  PROJET 1 FABIENNE PENNEWAERT -->
-                <div class="row">
-                    <div class="col s12 m6 l4 portfolioThumbs">
-                        <a class="modal-trigger" href="#modal1"><img class="col s12 m12 l12 center" src="./assets/images/fabienne/ThumbFabienne.jpg" width="350px"  alt=""></a>
-                    </div>
+            </nav>
+        </header>
 
-                    <!--  PROJET 2 JARDIN BOTANIQUE-->
+        <main>
+            <div>
+                <h2>Portfolio</h2>
+            </div>
+            <!--  PROJET 1 FABIENNE PENNEWAERT -->
+            <div class="row valign-wrapper">
+                <div class="col s12 m6 l6 portfolioThumbs">
+                    <img class="col s12 m12 l12 center" src="./assets/images/fabienne/fabienneImg1.jpg" width="350px"  alt="">
+                </div>
+                <div id="projet1" class="col s12 m6 l6 web">
+                    <h3>Fabienne Pennewaert</h3>
+                    <em>Website</em>
+                    <p>
+                    Creation of an online portfolio for the potographer Fabienne Pennewaert</p>
+                    <a class="modal-trigger" href="#modal1">See more</a>
 
-                    <div class="col s12 m6 l4 portfolioThumbs">
-                        <a class="modal-trigger" href="#modal2"><img class="col s12 m12 l12" src="./assets/images/botanique/ThumbJardin.jpg" width="350px"  alt=""></a>
-                    </div>
+                </div>
+            </div>
 
-                    <!--  PROJET 3 LOGO RELAX ENJOY-->
-                    <div class="col s12 m6 l4 portfolioThumbs">
-                        <a class="modal-trigger" href="#modal3"><img class="col s12 m12 l12" src="./assets/images/relax/ThumbRelax.jpg" width="350px"  alt=""></a>
-                    </div>
-                    <!--  PROJET 4 SITE RELAX ENJOY-->
-                    <div class="col s12 m6 l4 portfolioThumbs">
-                        <a class="modal-trigger" href="#modal4"><img class="col s12 m12 l12" src="./assets/images/hackaton/ThumbHackaton.jpg" width="350px"  alt=""></a>
-                    </div>
-                    <!--   PROJET 5 HACKATON-->
-                    <div class="col s12 m6 l4 portfolioThumbs">
-                        <a class="modal-trigger" href="#modal1"><img class="col s12 m12 l12" src="./assets/images/martin-adams-740397-unsplash.jpg" width="350px"  alt=""></a>
-                    </div>
-                    <!--   PROJET 6 CARTE VOEUX-->
-                    <div class="col s12 m6 l4 portfolioThumbs">
-                        <a class="modal-trigger" href="#modal1"><img class="col s12 m12 l12" src="./assets/images/martin-adams-740397-unsplash.jpg" width="350px"  alt=""></a>
-                    </div>
-
-                    <!-- ----------------------------------- -->
-                    <!-- MODAL    PROJET 1 FABIENNE PENNEWAERT -->
-
-                    <!-- Modal Structure -->
-                    <div id="modal1" class="modal modal-fixed-header">
-                        <div class="modal-content">
-
-                            <!--Modal header close button-->
-                            <div class="row">
-                                <div id="closeModal" class="right"><i class="material-icons modal-close">close</i>
-                                </div>
-                            </div>
-                            <!--modal contenu-->
-
-                            <div class="row">
-                                <div class="col s12 m12 l6">
-                                    <img src="./assets/images/fabienne/fabienneImg1.jpg" width="100%" alt="">
-                                </div>
-                                <div class="col s12 m12 l6">
-                                    <h4>Fabienne Pennewaert</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quasi facilis fugiat deleniti officia maiores! Deserunt sapiente, eaque iure cumque tempore saepe in soluta natus sit laudantium. Animi reiciendis ullam dicta ex tenetur aperiam corporis, vitae culpa autem magni quidem explicabo veniam iste, neque quia officiis quod magnam, iusto cum nulla. Facilis, aliquid, ullam. Quasi, adipisci dignissimos! Earum minima fuga blanditiis ullam doloribus. Aliquam autem nulla sint odio placeat facere corporis, sit alias doloremque vel eius, nisi officiis dignissimos reiciendis maxime ullam, inventore dolorum laboriosam aliquid repellendus ut repudiandae. Voluptate autem ratione excepturi voluptates et. Blanditiis vitae commodi culpa hic deleniti architecto aut quam ullam, ea, aliquam aperiam consectetur eligendi dolorum fuga natus exercitationem unde consequuntur, similique tempore dolor.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div col s12 m12 l12>
-                                    <img src="./assets/images/fabienne/fabienneImg3.jpg" width="100%" alt="">
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- ----------------------------------- -->
-                    <!-- MODAL    PROJET 2 JARDIN BOTANIQUE -->
-
-                    <!-- Modal Structure -->
-                    <div id="modal2" class="modal modal-fixed-header">
-                        <div class="modal-content">
-
-                            <!--Modal header close button-->
-                            <div class="row">
-                                <div id="closeModal" class="right"><i class="material-icons modal-close">close</i>
-                                </div>
-                            </div>
-                            <!--modal contenu-->
-
-                            <div class="row">
-                                <div class="col s12 m12 l6">
-                                    <img src="./assets/images/botanique/jardinImg1.jpg" width="100%" alt="">
-                                </div>
-                                <div class="col s12 m12 l6">
-                                    <h4>Jardin Botanique</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quasi facilis fugiat deleniti officia maiores! Deserunt sapiente, eaque iure cumque tempore saepe in soluta natus sit laudantium. Animi reiciendis ullam dicta ex tenetur aperiam corporis, vitae culpa autem magni quidem explicabo veniam iste, neque quia officiis quod magnam, iusto cum nulla. Facilis, aliquid, ullam. Quasi, adipisci dignissimos! Earum minima fuga blanditiis ullam doloribus. Aliquam autem nulla sint odio placeat facere corporis, sit alias doloremque vel eius, nisi officiis dignissimos reiciendis maxime ullam, inventore dolorum laboriosam aliquid repellendus ut repudiandae. Voluptate autem ratione excepturi voluptates et. Blanditiis vitae commodi culpa hic deleniti architecto aut quam ullam, ea, aliquam aperiam consectetur eligendi dolorum fuga natus exercitationem unde consequuntur, similique tempore dolor.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col s12 m6 l6">
-                                    <img src="./assets/images/botanique/jardinImg2.jpg" width="100%" alt="">
-                                </div>
-                                <div class="col s12 m6 l6">
-                                    <img src="./assets/images/botanique/jardinImg3.jpg" width="100%" alt="">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col s12 m6 l6">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quasi facilis fugiat deleniti officia maiores! Deserunt sapiente, eaque iure cumque tempore saepe in soluta natus sit laudantium. Animi reiciendis ullam dicta ex tenetur aperiam corporis, vitae culpa autem magni quidem explicabo veniam iste, neque quia officiis quod magnam</p>
-                                </div>
-                                <div class="col s12 m6 l6">
-                                    <img src="./assets/images/botanique/jardinImg4.jpg" width="100%" alt="">
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- ----------------------------------- -->
-                    <!-- MODAL    PROJET 3 RELAX ENJOY -->
-
-                    <!-- Modal Structure -->
-                    <div id="modal3" class="modal modal-fixed-header">
-                        <div class="modal-content">
-
-                            <!--Modal header close button-->
-                            <div class="row">
-                                <div id="closeModal" class="right"><i class="material-icons modal-close">close</i>
-                                </div>
-                            </div>
-                            <!--modal contenu-->
-
-                            <div class="row">
-                                <div class="col s12 m12 l6">
-                                    <img src="./assets/images/relax/relaxImg1.jpg" width="100%" alt="">
-                                </div>
-                                <div class="col s12 m12 l6">
-                                    <h4>Relax &amp; Enjoy</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quasi facilis fugiat deleniti officia maiores! Deserunt sapiente, eaque iure cumque tempore saepe in soluta natus sit laudantium. Animi reiciendis ullam dicta ex tenetur aperiam corporis, vitae culpa autem magni quidem explicabo veniam iste, neque quia officiis quod magnam, iusto cum nulla. Facilis, aliquid, ullam. Quasi, adipisci dignissimos! Earum minima fuga blanditiis ullam doloribus. Aliquam autem nulla sint odio placeat facere corporis, sit alias doloremque vel eius, nisi officiis dignissimos reiciendis maxime ullam, inventore dolorum laboriosam aliquid repellendus ut repudiandae. Voluptate autem ratione excepturi voluptates et. Blanditiis vitae commodi culpa hic deleniti architecto aut quam ullam, ea, aliquam aperiam consectetur eligendi dolorum fuga natus exercitationem unde consequuntur, similique tempore dolor.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col s12 m6 l6">
-                                    <img src="./assets/images/relax/relaxImg2.jpg" width="100%" alt="">
-                                </div>
-                                <div class="col s12 m6 l6">
-                                    <img src="./assets/images/relax/relaxImg3.jpg" width="100%" alt="">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col s12 m6 l6">
-                                    <img src="./assets/images/relax/relaxImg4.jpg" width="100%" alt="">
-
-                                </div>
-                                <div class="col s12 m6 l6">
-                                    <img src="./assets/images/relax/relaxImg5.jpg" width="100%" alt="">
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    
-                    <!-- ----------------------------------- -->
-                    <!-- MODAL    PROJET 4 HACKATON  -->
-
-                    <!-- Modal Structure -->
-                    <div id="modal4" class="modal modal-fixed-header">
-                        <div class="modal-content">
-
-                            <!--Modal header close button-->
-                            <div class="row">
-                                <div id="closeModal" class="right"><i class="material-icons modal-close">close</i>
-                                </div>
-                            </div>
-                            <!--modal contenu-->
-
-                            <div class="row">
-                                <div class="col s12 m12 l6">
-                                    <img src="./assets/images/hackaton/HackImg3.jpg" width="100%" alt="">
-                                </div>
-                                <div class="col s12 m12 l6">
-                                    <h4>Code Hackadamie</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quasi facilis fugiat deleniti officia maiores! Deserunt sapiente, eaque iure cumque tempore saepe in soluta natus sit laudantium. Animi reiciendis ullam dicta ex tenetur aperiam corporis, vitae culpa autem magni quidem explicabo veniam iste, neque quia officiis quod magnam, iusto cum nulla. Facilis, aliquid, ullam. Quasi, adipisci dignissimos! Earum minima fuga blanditiis ullam doloribus. Aliquam autem nulla sint odio placeat facere corporis, sit alias doloremque vel eius, nisi officiis dignissimos reiciendis maxime ullam, inventore dolorum laboriosam aliquid repellendus ut repudiandae. Voluptate autem ratione excepturi voluptates et. Blanditiis vitae commodi culpa hic deleniti architecto aut quam ullam, ea, aliquam aperiam consectetur eligendi dolorum fuga natus exercitationem unde consequuntur, similique tempore dolor.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col s12 m6 l6">
-                                    <img src="./assets/images/hackaton/HackImg1.jpg" width="100%" alt="">
-                                </div>
-                                <div class="col s12 m6 l6">
-                                    <img src="./assets/images/hackaton/HackImg2.jpg" width="100%" alt="">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col s12 m6 l6">
-                                    <img src="./assets/images/hackaton/HackImg4.jpg" width="100%" alt="">
-
-                                </div>
-                                <div class="col s12 m6 l6">
-                                    <img src="./assets/images/hackaton/HackImg5.jpg" width="100%" alt="">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col s12 m6 l6">
-                                    <img src="./assets/images/hackaton/HackImg6.jpg" width="100%" alt="">
-
-                                </div>
-                                <div class="col s12 m6 l6">
-                                    <img src="./assets/images/hackaton/HackImg7.jpg" width="100%" alt="">
-                                </div>
-                            </div>
-                         
-
-                        </div>
-
-                    </div>
-
-
-
+            <!--  PROJET 2 JARDIN BOTANIQUE-->
+            <div class="row valign-wrapper">
+                <div class="col s12 m6 l6 portfolioThumbs">
+                    <img class="col s12 m12 l12" src="./assets/images/botanique/jardinImg1.jpg" width="350px"  alt="">
+                </div>
+                <div id="projet2" class="col s12 m6 l6 graphic">
+                    <h3>Jardin Botanique</h3>
+                    <em>Graphic Layout</em>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae libero labore temporibus fuga adipisci, repudiandae unde vel asperiores dolores? Illo.</p>
+                    <a class="modal-trigger" href="#modal2">See more</a>
 
                 </div>
 
+            </div>
+            <!--  PROJET 3 SITE RELAX ENJOY-->
+            <div class="row valign-wrapper">
+                <div class="col s12 m6 l6 portfolioThumbs">
+                    <img class="col s12 m12 l12" src="./assets/images/relax/relaxImg1.jpg" width="350px"  alt="">
+                </div>
+                <div id="projet3" class="col s12 m6 l6 web">
+                    <h3>Relax &amp; Enjoy</h3>
+                    <em>Website</em>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae libero labore temporibus fuga adipisci, repudiandae unde vel asperiores dolores? Illo.</p>
+                    <a class="modal-trigger" href="#modal3">See more</a>
+
+                </div>   
+
+            </div>
+            <!--  PROJET 4 LOGO RELAX ENJOY-->
+<!--
+            <div class="col s12 m6 l4 portfolioThumbs">
+                <a class="modal-trigger" href="#modal4"><img class="col s12 m12 l12" src="./assets/images/hackaton/ThumbHackaton.jpg" width="350px"  alt=""></a>
+            </div>
+-->
+            <!--   PROJET 5 HACKATON-->
+            <div class="row valign-wrapper">
+                <div class="col s12 m6 l6 portfolioThumbs">
+                    <img class="col s12 m12 l12" src="./assets/images/hackaton/HackImg.jpg" width="350px"  alt="">
+                </div>
+                <div id="projet5" class="col s12 m6 l6 web">
+                    <h3>Code Hackadamie</h3>
+                    <em>Website - Hackathon</em>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae libero labore temporibus fuga adipisci, repudiandae unde vel asperiores dolores? Illo.</p>
+                    <a class="modal-trigger" href="#modal5">See more</a>
+
+                </div>   
+
+            </div>
+            <!--   PROJET 6 CARTE VOEUX-->
+<!--
+            <div class="col s12 m6 l4 portfolioThumbs">
+                <a class="modal-trigger" href="#modal1"><img class="col s12 m12 l12" src="./assets/images/martin-adams-740397-unsplash.jpg" width="350px"  alt=""></a>
+            </div>
+-->
+
+            <!-- ----------------------------------- -->
+            <!-- MODAL    PROJET 1 FABIENNE PENNEWAERT -->
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal modal-fixed-header">
+                <div class="modal-content">
+
+                    <!--Modal header close button-->
+                    <div class="row">
+                        <div id="closeModal" class="right"><i class="material-icons modal-close">close</i>
+                        </div>
+                    </div>
+                    <!--modal contenu-->
+
+                    <div class="row">
+                        <div class="col s12 m12 l6">
+                            <img src="./assets/images/fabienne/fabienneImg1.jpg" width="100%" alt="">
+                        </div>
+                        <div class="col s12 m12 l6">
+                            <h4>Fabienne Pennewaert</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quasi facilis fugiat deleniti officia maiores! Deserunt sapiente, eaque iure cumque tempore saepe in soluta natus sit laudantium. Animi reiciendis ullam dicta ex tenetur aperiam corporis, vitae culpa autem magni quidem explicabo veniam iste, neque quia officiis quod magnam, iusto cum nulla. Facilis, aliquid, ullam. Quasi, adipisci dignissimos! Earum minima fuga blanditiis ullam doloribus. Aliquam autem nulla sint odio placeat facere corporis, sit alias doloremque vel eius, nisi officiis dignissimos reiciendis maxime ullam, inventore dolorum laboriosam aliquid repellendus ut repudiandae. Voluptate autem ratione excepturi voluptates et. Blanditiis vitae commodi culpa hic deleniti architecto aut quam ullam, ea, aliquam aperiam consectetur eligendi dolorum fuga natus exercitationem unde consequuntur, similique tempore dolor.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div col s12 m12 l12>
+                            <img src="./assets/images/fabienne/fabienneImg3.jpg" width="100%" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ----------------------------------- -->
+            <!-- MODAL    PROJET 2 JARDIN BOTANIQUE -->
+
+            <!-- Modal Structure -->
+            <div id="modal2" class="modal modal-fixed-header">
+                <div class="modal-content">
+
+                    <!--Modal header close button-->
+                    <div class="row">
+                        <div id="closeModal" class="right"><i class="material-icons modal-close">close</i>
+                        </div>
+                    </div>
+                    <!--modal contenu-->
+
+                    <div class="row">
+                        <div class="col s12 m12 l6">
+                            <img src="./assets/images/botanique/jardinImg1.jpg" width="100%" alt="">
+                        </div>
+                        <div class="col s12 m12 l6">
+                            <h4>Jardin Botanique</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quasi facilis fugiat deleniti officia maiores! Deserunt sapiente, eaque iure cumque tempore saepe in soluta natus sit laudantium. Animi reiciendis ullam dicta ex tenetur aperiam corporis, vitae culpa autem magni quidem explicabo veniam iste, neque quia officiis quod magnam, iusto cum nulla. Facilis, aliquid, ullam. Quasi, adipisci dignissimos! Earum minima fuga blanditiis ullam doloribus. Aliquam autem nulla sint odio placeat facere corporis, sit alias doloremque vel eius, nisi officiis dignissimos reiciendis maxime ullam, inventore dolorum laboriosam aliquid repellendus ut repudiandae. Voluptate autem ratione excepturi voluptates et. Blanditiis vitae commodi culpa hic deleniti architecto aut quam ullam, ea, aliquam aperiam consectetur eligendi dolorum fuga natus exercitationem unde consequuntur, similique tempore dolor.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <img src="./assets/images/botanique/jardinImg2.jpg" width="100%" alt="">
+                        </div>
+                        <div class="col s12 m6 l6">
+                            <img src="./assets/images/botanique/jardinImg3.jpg" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quasi facilis fugiat deleniti officia maiores! Deserunt sapiente, eaque iure cumque tempore saepe in soluta natus sit laudantium. Animi reiciendis ullam dicta ex tenetur aperiam corporis, vitae culpa autem magni quidem explicabo veniam iste, neque quia officiis quod magnam</p>
+                        </div>
+                        <div class="col s12 m6 l6">
+                            <img src="./assets/images/botanique/jardinImg4.jpg" width="100%" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ----------------------------------- -->
+            <!-- MODAL    PROJET 3 RELAX ENJOY -->
+
+            <!-- Modal Structure -->
+            <div id="modal3" class="modal modal-fixed-header">
+                <div class="modal-content">
+
+                    <!--Modal header close button-->
+                    <div class="row">
+                        <div id="closeModal" class="right"><i class="material-icons modal-close">close</i>
+                        </div>
+                    </div>
+                    <!--modal contenu-->
+
+                    <div class="row">
+                        <div class="col s12 m12 l6">
+                            <img src="./assets/images/relax/relaxImg1.jpg" width="100%" alt="">
+                        </div>
+                        <div class="col s12 m12 l6">
+                            <h4>Relax &amp; Enjoy</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quasi facilis fugiat deleniti officia maiores! Deserunt sapiente, eaque iure cumque tempore saepe in soluta natus sit laudantium. Animi reiciendis ullam dicta ex tenetur aperiam corporis, vitae culpa autem magni quidem explicabo veniam iste, neque quia officiis quod magnam, iusto cum nulla. Facilis, aliquid, ullam. Quasi, adipisci dignissimos! Earum minima fuga blanditiis ullam doloribus. Aliquam autem nulla sint odio placeat facere corporis, sit alias doloremque vel eius, nisi officiis dignissimos reiciendis maxime ullam, inventore dolorum laboriosam aliquid repellendus ut repudiandae. Voluptate autem ratione excepturi voluptates et. Blanditiis vitae commodi culpa hic deleniti architecto aut quam ullam, ea, aliquam aperiam consectetur eligendi dolorum fuga natus exercitationem unde consequuntur, similique tempore dolor.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <img src="./assets/images/relax/relaxImg2.jpg" width="100%" alt="">
+                        </div>
+                        <div class="col s12 m6 l6">
+                            <img src="./assets/images/relax/relaxImg3.jpg" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <img src="./assets/images/relax/relaxImg4.jpg" width="100%" alt="">
+
+                        </div>
+                        <div class="col s12 m6 l6">
+                            <img src="./assets/images/relax/relaxImg5.jpg" width="100%" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ----------------------------------- -->
+            <!-- MODAL    PROJET 5 HACKATON  -->
+
+            <!-- Modal Structure -->
+            <div id="modal5" class="modal modal-fixed-header">
+                <div class="modal-content">
+
+                    <!--Modal header close button-->
+                    <div class="row">
+                        <div id="closeModal" class="right"><i class="material-icons modal-close">close</i>
+                        </div>
+                    </div>
+                    <!--modal contenu-->
+
+                    <div class="row">
+                        <div class="col s12 m12 l6">
+                            <img src="./assets/images/hackaton/HackImg.jpg" width="100%" alt="">
+                        </div>
+                        <div class="col s12 m12 l6">
+                            <h4>Code Hackadamie</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quasi facilis fugiat deleniti officia maiores! Deserunt sapiente, eaque iure cumque tempore saepe in soluta natus sit laudantium. Animi reiciendis ullam dicta ex tenetur aperiam corporis, vitae culpa autem magni quidem explicabo veniam iste, neque quia officiis quod magnam, iusto cum nulla. Facilis, aliquid, ullam. Quasi, adipisci dignissimos! Earum minima fuga blanditiis ullam doloribus. Aliquam autem nulla sint odio placeat facere corporis, sit alias doloremque vel eius, nisi officiis dignissimos reiciendis maxime ullam, inventore dolorum laboriosam aliquid repellendus ut repudiandae. Voluptate autem ratione excepturi voluptates et. Blanditiis vitae commodi culpa hic deleniti architecto aut quam ullam, ea, aliquam aperiam consectetur eligendi dolorum fuga natus exercitationem unde consequuntur, similique tempore dolor.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <img src="./assets/images/hackaton/HackImg1.jpg" width="100%" alt="">
+                        </div>
+                        <div class="col s12 m6 l6">
+                            <img src="./assets/images/hackaton/HackImg2.jpg" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <img src="./assets/images/hackaton/HackImg4.jpg" width="100%" alt="">
+
+                        </div>
+                        <div class="col s12 m6 l6">
+                            <img src="./assets/images/hackaton/HackImg5.jpg" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <img src="./assets/images/hackaton/HackImg6.jpg" width="100%" alt="">
+
+                        </div>
+                        <div class="col s12 m6 l6">
+                            <img src="./assets/images/hackaton/HackImg7.jpg" width="100%" alt="">
+                        </div>
+                    </div>
 
 
-            </main>
+                </div>
 
-
-
-
-            <!-- Compiled and minified JavaScript -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-            </script>
-
-            <script>
-                $(document).ready(function(){
-                    $('.sidenav').sidenav();
-                });
-
-                $(document).ready(function(){
-                    $('.modal').modal();
-                });
-
-            </script>
+            </div>
 
 
 
 
 
-        </body>
-    </html>
+
+
+
+        </main>
+
+
+
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+
+            $(document).ready(function(){
+                $('.modal').modal();
+            });
+
+        </script>
+
+
+
+
+
+    </body>
+</html>
