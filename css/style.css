@@ -118,7 +118,7 @@ nav ul a:hover {
 #sectionAbout {
   background-image: url(./SVG/formeAbout.svg);
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 75%;
   background-position: center; }
   #sectionAbout h2 {
     color: #F16A77; }
@@ -128,10 +128,18 @@ nav ul a:hover {
     align-content: flex-start; }
   #sectionAbout p {
     color: #4F64AE;
-    max-width: 600px;
+    max-width: 700px;
     max-height: 400px;
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: 30px; }
+  #sectionAbout span {
+    font-family: "Poppins SemiBold"; }
+  #sectionAbout #hello {
+    font-family: "Big John";
+    color: #F16A77;
+    font-size: 1.5em; }
+  #sectionAbout #strong {
+    font-size: 1.2em; }
 
 @media (max-width: 992px) {
   #sectionAbout {
@@ -232,8 +240,12 @@ nav ul a:hover {
 #portfolioBody h3 {
   font-family: "Big John";
   color: #F9C0CB; }
+#portfolioBody h4 {
+  color: #F16A77; }
 #portfolioBody a {
   color: #F16A77; }
+#portfolioBody a:hover {
+  text-decoration: overline; }
 #portfolioBody .portfolioThumbs {
   padding: 15px;
   padding-bottom: 20px; }
@@ -359,5 +371,3 @@ nav ul a:hover {
 	right:0;
 }
 */
-
-/*# sourceMappingURL=style.css.map */
