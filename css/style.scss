@@ -10,12 +10,13 @@
 @import url('assets/fonts/Poppins/Poppins-SemiBold.ttf');
 @import url('assets/fonts/Poppins/Poppins-Thin.ttf');
 
-
+/* COLORS */
 $pinkLight: #F9C0CB;
 $pinkDark: #F16A77;
 $blueLight: #4F64AE;
 $blueDark: #293376;
 
+/* FONTS */
 $titleFont: 'Big John';
 //$navFont: 'Slim Joe';
 $navFont: 'Poppins Light';
@@ -85,7 +86,6 @@ nav {
     }
     .logo-brand:hover{
         text-decoration: overline;
-        //font-size: 1.6em;
     }
     .sidenav-trigger{
         color: $pinkDark;
@@ -102,20 +102,18 @@ nav {
         a:hover{
             background-color: transparent;
             color:$blueLight;
-            //text-decoration: overline;
         }
-    }
-    
+    }   
 }
+
+
 
 /* ----- SIDE NAV -----*/
 
 .sidenav{
     background-color: $pinkDark;
     opacity: 0.8;
-    box-shadow: none;
-    //transform: translateX(105%);
-    
+    box-shadow: none;    
     font-family: $textFont;
     li{
         a{
@@ -126,8 +124,7 @@ nav {
         a:hover{
             color: $blueLight;
             background-color: transparent;
-        }
-        
+        }   
     }
     .sidenav-close{
         color: #fff;
@@ -139,8 +136,6 @@ nav {
 }
 .sidenav-overlay{
     background-color: transparent;
-    //background-color: $pinkDark;
-    //opacity: 0.2;
 }
 
 /*-----BOUTON TOP-----*/
@@ -151,18 +146,13 @@ nav {
     right: 30px; 
     z-index: 99; 
     background-color:$pinkDark; 
-
 }
+
 
 /* ------ SECTION 1 HOME ----- */
 .box{
     height: 600px;
 }
-/*@media (max-width:992px){
-    .box{
-        height: 400px;
-    }
-}*/
 #section1{
     h1{
         @extend %h1;
@@ -179,9 +169,9 @@ nav {
     }
     p:hover{
         text-decoration:overline;
-    }
-    
+    }  
 }
+
 
 /* ------ SECTION 2 ABOUT ----- */
 #sectionAbout{
@@ -206,7 +196,6 @@ nav {
         padding: 30px;
     }
     span{
-        //color: $pinkDark;
         font-family: $spanFont;
     }
     #hello{
@@ -219,21 +208,20 @@ nav {
     }
 }
 @media (max-width:992px){
-    #sectionAbout{
-    //background-size: 100%;    
-    background-image: none;
-    //background-color: #fff;    
+    #sectionAbout{    
+    background-image: none;    
         p{
             text-align: justify;
             color: #fff;
         }
     }
 }
+
+
 /* ------ SECTION 3 SKILLS  ----- */
 #sectionSkills{
     #boxSkills{
         margin-top: 100px;
-        /*min-height: 350px;*/
     }
     h2{
         @extend %h2;
@@ -257,7 +245,6 @@ nav {
             background-image: url(SVG/symbolCode.svg);
             background-repeat:no-repeat;
             background-size:100%;
-           
         }
     }
     @media (max-width:992px){
@@ -330,20 +317,19 @@ nav {
     }
 }
 
+
 /* ------ SECTION 4 PORTFOLIO  ----- */
 
 #sectionPortfolio{
     h2{
        @extend %h2;
         color: #fff;
-        
         a{
             color: $pinkDark;
         }
         a:hover{
             color: $blueLight;
         }
-        
     }
 }
 @media (max-width:992px){
@@ -351,11 +337,12 @@ nav {
         font-size: 6em;
     }
 }
+
+
 /* ------ PAGE PORTFOLIO  ----- */
 
 #portfolioBody, #navWhite {
-    background-color: #fff;
-    
+    background-color: #fff;  
 }
 #portfolioBody{
     h2{
@@ -385,26 +372,17 @@ nav {
     a:hover{
         text-decoration: overline;
     }
-
     .portfolioThumbs{
         padding: 15px;
-        padding-bottom: 20px;
-        //padding-top: 20px;
-        
-        
+        padding-bottom: 20px;  
     }
     .portfolioThumbs:hover{
-        
-    }
-    #projet1{
-        //background-color: $blueLight;
         
     }
     .modal{
         width:80%;
         height: 80%;
     }
-
     #closeModal{
         color: $pinkDark;
     }
@@ -416,11 +394,11 @@ nav {
     }
 }
 
+
 /* ----- PAGE CONTACT -----*/
 
 #contactBody{
     background-color: #fff;
-    
     h2{
         @extend %h2;
         color: $pinkDark;
@@ -432,7 +410,6 @@ nav {
         background-repeat: no-repeat;
         background-size:85%;
         background-position: center;
-        
         h3{
             font-family: $titleFont;
             color: #fff;
@@ -486,6 +463,7 @@ nav {
     }
 }
  
+
 /* PAGINATION */
 /*
 .pag {
