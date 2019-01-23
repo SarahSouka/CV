@@ -9,6 +9,8 @@
 @import url("assets/fonts/Poppins/Poppins-Medium.ttf");
 @import url("assets/fonts/Poppins/Poppins-SemiBold.ttf");
 @import url("assets/fonts/Poppins/Poppins-Thin.ttf");
+/* COLORS */
+/* FONTS */
 #sectionAbout h2, #sectionSkills h2, #sectionPortfolio h2, #portfolioBody h2, #contactBody h2 {
   font-size: 10em;
   font-family: "Big John";
@@ -99,11 +101,6 @@ nav ul a:hover {
 .box {
   height: 600px; }
 
-/*@media (max-width:992px){
-    .box{
-        height: 400px;
-    }
-}*/
 #section1 h1 span {
   color: #4F64AE; }
 #section1 h1 span:hover {
@@ -149,8 +146,7 @@ nav ul a:hover {
       color: #fff; } }
 /* ------ SECTION 3 SKILLS  ----- */
 #sectionSkills #boxSkills {
-  margin-top: 100px;
-  /*min-height: 350px;*/ }
+  margin-top: 100px; }
 #sectionSkills h2 {
   color: #4F64AE; }
 #sectionSkills #codeSkills {
@@ -252,6 +248,9 @@ nav ul a:hover {
 #portfolioBody .modal {
   width: 80%;
   height: 80%; }
+  #portfolioBody .modal em {
+    font-size: 0.9em;
+    color: #4F64AE; }
 #portfolioBody #closeModal {
   color: #F16A77; }
 #portfolioBody h4 {
