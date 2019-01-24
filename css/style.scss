@@ -376,6 +376,11 @@ nav {
         padding: 15px;
         padding-bottom: 20px;  
     }
+    @media (max-width:600px){
+        .portfolioThumbs{
+            display: none;
+        }
+    }
     .portfolioThumbs:hover{
         
     }

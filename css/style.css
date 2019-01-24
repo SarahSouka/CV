@@ -245,6 +245,9 @@ nav ul a:hover {
 #portfolioBody .portfolioThumbs {
   padding: 15px;
   padding-bottom: 20px; }
+@media (max-width: 600px) {
+  #portfolioBody .portfolioThumbs {
+    display: none; } }
 #portfolioBody .modal {
   width: 80%;
   height: 80%; }
