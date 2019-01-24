@@ -183,7 +183,7 @@ nav {
     }
     p{
         color: $pinkDark;
-        font-family: 'Poppins SemiBold';
+        font-family: 'Poppins-SemiBold';
     }
     p:hover{
         text-decoration:overline;
@@ -363,6 +363,13 @@ nav {
     background-color: #fff;  
 }
 #portfolioBody{
+    
+    
+    
+    
+    
+    
+    
     h2{
         @extend %h2;
         color: $pinkDark;
@@ -384,10 +391,10 @@ nav {
            // color: $pinkDark;
         }
     }
-    a{
+    .modal-trigger{
         color: $pinkDark;
     }
-    a:hover{
+    .modal-trigger:hover{
         text-decoration: overline;
     }
     .portfolioThumbs{
@@ -418,6 +425,34 @@ nav {
     }
     p{
         font-family: $textFont;
+    }
+    .sidenav{
+    background-color: $pinkDark;
+    opacity: 0.8;
+    box-shadow: none;    
+    font-family: $textFont;
+    li{
+        a{
+            color: #fff;
+            font-size: 3em;
+            margin: 5px;
+        }
+        a:hover{
+            color: $blueLight;
+            background-color: transparent;
+            
+        }   
+    }
+    .sidenav-close{
+        color: #fff;
+        margin: 10px;
+    }
+    .sidenav-close:hover{
+        color: $blueLight;
+    }
+    }
+    .sidenav-overlay{
+    background-color: transparent;
     }
 }
 

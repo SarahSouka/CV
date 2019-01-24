@@ -119,7 +119,7 @@ nav ul a:hover {
   color: #F16A77; }
 #section1 p {
   color: #F16A77;
-  font-family: 'Poppins SemiBold'; }
+  font-family: 'Poppins-SemiBold'; }
 #section1 p:hover {
   text-decoration: overline; }
 
@@ -250,9 +250,9 @@ nav ul a:hover {
   color: #F9C0CB; }
 #portfolioBody h4 {
   color: #F16A77; }
-#portfolioBody a {
+#portfolioBody .modal-trigger {
   color: #F16A77; }
-#portfolioBody a:hover {
+#portfolioBody .modal-trigger:hover {
   text-decoration: overline; }
 #portfolioBody .portfolioThumbs {
   padding: 15px;
@@ -272,6 +272,25 @@ nav ul a:hover {
   font-family: "BIGJOHN"; }
 #portfolioBody p {
   font-family: "Poppins-Regular"; }
+#portfolioBody .sidenav {
+  background-color: #F16A77;
+  opacity: 0.8;
+  box-shadow: none;
+  font-family: "Poppins-Regular"; }
+  #portfolioBody .sidenav li a {
+    color: #fff;
+    font-size: 3em;
+    margin: 5px; }
+  #portfolioBody .sidenav li a:hover {
+    color: #4F64AE;
+    background-color: transparent; }
+  #portfolioBody .sidenav .sidenav-close {
+    color: #fff;
+    margin: 10px; }
+  #portfolioBody .sidenav .sidenav-close:hover {
+    color: #4F64AE; }
+#portfolioBody .sidenav-overlay {
+  background-color: transparent; }
 
 /* ----- PAGE CONTACT -----*/
 #contactBody {
