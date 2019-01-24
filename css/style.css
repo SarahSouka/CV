@@ -9,16 +9,28 @@
 @import url("assets/fonts/Poppins/Poppins-Medium.ttf");
 @import url("assets/fonts/Poppins/Poppins-SemiBold.ttf");
 @import url("assets/fonts/Poppins/Poppins-Thin.ttf");
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf); }
+@font-face {
+  font-family: Poppins-Light;
+  src: url(../assets/fonts/Poppins/Poppins-Light.ttf); }
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url(../assets/fonts/Poppins/Poppins-SemiBold.ttf); }
+@font-face {
+  font-family: BIGJOHN;
+  src: url(../assets/fonts/BigJohnSlimJoe/BIGJOHN.otf); }
 /* COLORS */
 /* FONTS */
 #sectionAbout h2, #sectionSkills h2, #sectionPortfolio h2, #portfolioBody h2, #contactBody h2 {
   font-size: 10em;
-  font-family: "Big John";
+  font-family: "BIGJOHN";
   margin-bottom: 0; }
 
 #section1 h1 {
   font-size: 7em;
-  font-family: "Big John";
+  font-family: "BIGJOHN";
   color: #fff; }
 
 @media (max-width: 992px) {
@@ -48,7 +60,7 @@ main {
 /* ------ NAV ----- */
 nav .logo-brand {
   color: #F16A77;
-  font-family: "Poppins Light";
+  font-family: "Poppins-Light";
   font-size: 1.5em;
   margin: 15px;
   text-transform: uppercase; }
@@ -59,7 +71,7 @@ nav .sidenav-trigger {
 nav .sidenav-trigger:hover {
   color: #4F64AE; }
 nav ul a {
-  font-family: "Poppins";
+  font-family: "Poppins-Regular";
   color: #F16A77;
   font-size: 1.3em; }
 nav ul a:hover {
@@ -71,7 +83,7 @@ nav ul a:hover {
   background-color: #F16A77;
   opacity: 0.8;
   box-shadow: none;
-  font-family: "Poppins"; }
+  font-family: "Poppins-Regular"; }
   .sidenav li a {
     color: #fff;
     font-size: 3em;
@@ -130,9 +142,9 @@ nav ul a:hover {
     font-size: 1.1em;
     padding: 30px; }
   #sectionAbout span {
-    font-family: "Poppins SemiBold"; }
+    font-family: "Poppins-SemiBold"; }
   #sectionAbout #hello {
-    font-family: "Big John";
+    font-family: "BIGJOHN";
     color: #F16A77;
     font-size: 1.5em; }
   #sectionAbout #strong {
@@ -234,7 +246,7 @@ nav ul a:hover {
 #portfolioBody h2 {
   color: #F16A77; }
 #portfolioBody h3 {
-  font-family: "Big John";
+  font-family: "BIGJOHN";
   color: #F9C0CB; }
 #portfolioBody h4 {
   color: #F16A77; }
@@ -257,9 +269,9 @@ nav ul a:hover {
 #portfolioBody #closeModal {
   color: #F16A77; }
 #portfolioBody h4 {
-  font-family: "Big John"; }
+  font-family: "BIGJOHN"; }
 #portfolioBody p {
-  font-family: "Poppins"; }
+  font-family: "Poppins-Regular"; }
 
 /* ----- PAGE CONTACT -----*/
 #contactBody {
@@ -274,7 +286,7 @@ nav ul a:hover {
     background-size: 85%;
     background-position: center; }
     #contactBody #contact h3 {
-      font-family: "Big John";
+      font-family: "BIGJOHN";
       color: #fff;
       font-size: 2em; }
     #contactBody #contact p {
