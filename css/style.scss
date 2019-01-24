@@ -10,6 +10,24 @@
 @import url('assets/fonts/Poppins/Poppins-SemiBold.ttf');
 @import url('assets/fonts/Poppins/Poppins-Thin.ttf');
 
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: PoppinsLight;
+    src: url(../assets/fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: PoppinsSemiBold;
+    src: url(../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: BigJohn;
+    src: url(../assets/fonts/BigJohnSlimJoe/BIGJOHN.otf);
+}
+
+
 /* COLORS */
 $pinkLight: #F9C0CB;
 $pinkDark: #F16A77;
@@ -17,11 +35,11 @@ $blueLight: #4F64AE;
 $blueDark: #293376;
 
 /* FONTS */
-$titleFont: 'Big John';
+$titleFont: 'BigJohn';
 //$navFont: 'Slim Joe';
-$navFont: 'Poppins Light';
+$navFont: 'PoppinsLight';
 $textFont: 'Poppins';
-$spanFont: 'Poppins SemiBold';
+$spanFont: 'PoppinsSemiBold';
 
 
 %section{
